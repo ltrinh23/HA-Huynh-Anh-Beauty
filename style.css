@@ -1,0 +1,140 @@
+body {
+    background-color: #8BD3CD;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'URW Chancery L', cursive;
+    overflow-x: hidden; 
+}
+img{
+    width: 700px;
+    /*display: block;
+    margin-left: auto;*/
+}
+header {
+    background-color: #8BD3CD;
+    width: 100%;
+    text-align: center;
+    /*padding: 20px 0;*/    /*Review, customer, news, video top bar*/
+    box-sizing: border-box;
+}
+header img {
+    max-width: 80%;
+    height: auto;
+}
+nav{       /*about, contact, service boxes, and small logo*/
+    background-color: #37AFA5;
+    color: #F9F295;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+
+}
+.small-logo{
+    padding: 20px;
+    width: 5.5rem;
+    float: left;
+}
+select{                /*Translation box*/
+    float: right;
+    padding: 2px;
+    background-color: #37AFA5;
+    color: #F9F295;
+    border-color: #F7EF8A; /*Just this color for now*/
+}
+nav a {             /*about, customer, news, videos bar*/
+    color: #F7EF8A; 
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2 {
+    font-family: 'URW Chancery L', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-section, .services-section, .contact-section {
+    font-family: 'URW Chancery L', cursive;
+    background: linear-gradient(to top, #37AFA5, #8BD3CD);     /*#2C3E50*/
+    color: #F7EF8A;
+    padding: 20px 20px;
+    margin: 20px 0;      /* about, service, contact boxes moving up and down*/
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.social-icons{
+    display: flex;
+    width: 100px;
+    gap: 20px;
+}
+svg{
+    fill: var(--colorpirmary);
+    width: 25px;
+}
+svg:hover{
+    fill: var(--coloraccent);
+}
+.about-section p, .services-section p, .contact-section p {
+    font-family: 'URW Chancery L', cursive;
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-align: center;
+}
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.a, .b, .c{             /*border box*/
+    border: 2px solid #F7EF8A; 
+    height: 100%; 
+    box-sizing: border-box; 
+    padding: 1rem; 
+    text-align: center; 
+}
+.rv-style{              /*review page */
+    font-size: 40px; 
+    color: #F7EF8A; 
+    font-family: 'Snell Roundhand', cursive;
+}
+.rv-par{                /*review page */
+    font-size: 20px; 
+    color: #F7EF8A; 
+    font-family: 'URW Chancery L', cursive;
+}
+.rv-home, .rv-next {
+    margin-left: 20px;
+    font-size: 20px; 
+}
+.c-home, .c-next, .c-prev{      /*customer page*/
+    margin-left: 20px;
+    font-size: 20px;
+}
+.n-home, .n-next, .n-prev{      /*news page*/
+    margin-left: 20px;
+    font-size: 20px;
+}
+.v-home, .v-next, .v-prev{      /*video page*/
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+/*
+.showcase{
+    position: relative;
+    height: 100vh;
+    padding: 2rem;
+    text-align: center;
+}*/

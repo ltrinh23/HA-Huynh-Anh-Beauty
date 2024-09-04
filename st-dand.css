@@ -1,0 +1,132 @@
+body {
+    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Stop Website from scrolling side to side */
+}
+.delayed-appear {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 5s; /* Delay the transition by 5 seconds */
+}
+
+/* Show the image after the delay */
+body.loaded .delayed-appear {
+    opacity: 1;
+}
+.dandelion {
+    position: relative;
+}
+.seed{          /*"container"*/
+    position: relative;
+    width: 17px;
+    height: 17px;
+    background: #F9F295;
+    border-radius: 50%; 
+    animation: blow 5s infinite linear;
+    transform-origin: center;
+}
+.seed:nth-child(1) {
+    top: 100px;
+    animation-delay: 2s;
+}   
+.seed:nth-child(2) {
+    top: 80px;
+    left: 500px;
+    animation-delay: 0s;
+}
+.seed:nth-child(3) {
+    top: -400px;
+    left: 560px;
+    animation-delay: 1s;
+}
+.seed:nth-child(4) {
+    top: -120px;
+    left: 580px;
+    animation-delay: 2s;
+}
+.seed:nth-child(5) {    /*dandelion that hit right at the logo */
+    top: 140px;
+    left: 600px;
+    animation-delay: 0s;
+}   
+.seed:nth-child(6) {
+    top: -460px;
+    left: 620px;
+    animation-delay: 2s;
+    }
+.seed:nth-child(7) {
+    top: 320px;
+    left: 640px;
+    animation-delay: 1s;
+}
+.seed:nth-child(8) {
+    top: -300px;
+    left: 660px;
+    animation-delay: 2s;
+}
+    
+    /* Add more nth-child selectors for additional seeds */
+    
+@keyframes blow {
+    0% {
+    transform: rotate(360deg) translateY(0);
+    opacity: 0;
+    }
+    100% {
+    transform: rotate(0deg) translateY(-300px);
+    opacity: 1;
+    }
+}
+
+/*
+
+
+#myImage {
+    opacity: 0;
+    filter: blur(20px);
+    transition: filter 5s, opacity 40s;
+}
+
+@keyframes showHide {
+    0% {
+      width:0%;
+     }
+    40% {
+      width:0%;
+      }
+    60% {
+      width:0%;
+      }
+    100% {
+      width:100%;
+      }
+}
+.original-logo{
+    width: 50rem;
+    margin: center;
+    
+}
+.fadingEffect {
+    position:absolute;
+    top:0; bottom:0; right:0;
+    width:100%;
+    background: #8BD3CD;
+    animation: showHide 5s ease-in;
+}
+
+
+    0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    }
+    100% {
+    transform: translate(300px, -300px) scale(0.5);
+    opacity: 0;
+    }
+
+    
+*/
