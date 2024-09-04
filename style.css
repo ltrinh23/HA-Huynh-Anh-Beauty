@@ -66,7 +66,7 @@ h2 {
 .about-section, .services-section, .contact-section {
     font-family: 'URW Chancery L', cursive;
     background: linear-gradient(to top, #37AFA5, #8BD3CD);     /*#2C3E50*/
-    color: #F7EF8A;
+    color: #EDC967;
     padding: 20px 20px;
     margin: 20px 0;      /* about, service, contact boxes moving up and down*/
     border-radius: 8px;
@@ -97,7 +97,7 @@ footer {
     margin-top: 20px;
 }
 .a, .b, .c{             /*border box*/
-    border: 2px solid #F7EF8A; 
+    border: 2px solid #EDC967; 
     height: 100%; 
     box-sizing: border-box; 
     padding: 1rem; 
