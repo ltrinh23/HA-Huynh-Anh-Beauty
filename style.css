@@ -64,7 +64,7 @@ h2 {
     margin-bottom: 20px;
 }
 .about-section, .services-section, .contact-section {
-    font-family: 'URW Chancery L', cursive;
+    font-family: serif;
     background: linear-gradient(to top, #37AFA5, #8BD3CD);     /*#2C3E50*/
     color: #EDC967;
     padding: 20px 20px;
@@ -85,7 +85,7 @@ svg:hover{
     fill: var(--coloraccent);
 }
 .about-section p, .services-section p, .contact-section p {
-    font-family: 'URW Chancery L', cursive;
+    font-family: serif;
     font-size: 1.1em;
     margin: 10px 0;
     text-align: center;
