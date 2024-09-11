@@ -32,7 +32,7 @@ const translations = {
         con3: "Email:",
         con4: "We are always ready to listen and provide advice. Contact us for more details about our services and to schedule an appointment.",
         rv_pag: "Review",
-        pag_para:  "Our customers consistently appreciate the quality of our services and the professionalism of our staff. Below are some reviews from clients who have experienced services at HA Huỳnh Anh Beauty."
+        pag_para:  "BBOur customers consistently appreciate the quality of our services and the professionalism of our staff. Below are some reviews from clients who have experienced services at HA Huỳnh Anh Beauty."
     }
 
 }
