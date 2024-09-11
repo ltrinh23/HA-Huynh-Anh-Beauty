@@ -3,15 +3,54 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.6;                   /*Single or double spaces*/
     font-family: 'URW Chancery L', cursive;
     overflow-x: hidden; 
 }
-img{
+.thumbnail{                /*Logo*/
     width: 700px;
+    cursor: pointer;        
     /*display: block;
     margin-left: auto;*/
 }
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider img{
+    width: 700px;
+    display: none;
+    /*margin-left: auto;*/
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+} 
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.previous{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 4;}    
+}
+
 header {
     background-color: #8BD3CD;
     width: 100%;
@@ -23,7 +62,80 @@ header img {
     max-width: 80%;
     height: auto;
 }
-nav{       /*about, contact, service boxes, and small logo*/
+
+.menu-container {               /*menu icon*/
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {           /*menu icon*/
+    width: 35px;
+    height: 2px;
+    background-color: #F7EF8A;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {                 /*menu bar1*/
+    transform: translate(0, 11px) rotate(-45deg);
+} 
+.change .bar2 {                 /*menu bar2*/
+    opacity: 0;
+}
+.change .bar3 {                 /*menu bar3*/
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.dropbtn {                      /*Drop down button color*/
+    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+    color: #F7EF8A;
+    padding: 10px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #4cbbb2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #F7EF8A;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #8BD3CD;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+        font-family: Georgia, serif;
+
+}
+
+.dropdown:hover .dropbtn {         /* when hover */
+    background-color: #2ea097;
+}
+
+.break1{
+    display: block;
+    content: "";
+    margin-top: 150px;
+}
+nav{       /*about, service, contact boxes, and small logo*/
     background-color: #37AFA5;
     color: #F9F295;
     padding: 10px;
@@ -39,40 +151,108 @@ nav{       /*about, contact, service boxes, and small logo*/
     width: 5.5rem;
     float: left;
 }
-select{                /*Translation box*/
-    float: right;
-    padding: 2px;
-    background-color: #37AFA5;
-    color: #F9F295;
-    border-color: #F7EF8A; /*Just this color for now*/
-}
-nav a {             /*about, customer, news, videos bar*/
+
+nav a {             /*about-me, service, contact top bar*/
     color: #F7EF8A; 
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.2em;
 }
-.container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+
+.break2{ 
+    display: block;
+    content: "";
+    margin-top: 200px;
 }
+
 h2 {
     font-family: 'URW Chancery L', cursive;
     font-size: 2.5em;
-    text-align: center;
     margin-bottom: 20px;
+
 }
+#about{                 /*about me section*/
+    margin: 150px auto;
+    display: flex;
+}
+.profile{               /*pfp*/
+    max-width: 500px;
+    float: left;
+    height: 500px;
+    border-radius: 8%;
+
+}
+.h_about{                           /*About Styles*/
+    font-family: Snell Roundhand, cursive; 
+    font-weight: bold;
+    text-align: center;
+}
+
+#services{                 /*service section*/
+    margin: 150px auto;
+    display: flex;
+}
+
+.s-pic{                     /*Service pic*/
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    height: 400px;
+    border-radius: 8%;
+    float: right;
+}
+.s-pic2{                        /*Service pic2*/
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 8%;
+    float: right;
+}
+
+.h_service{                         /*Service Styles*/
+    font-family: Snell Roundhand, cursive; 
+    font-weight: bold;
+    text-align: center;
+}
+.h_con{                             /*Contact Styles*/
+    font-family: Snell Roundhand, cursive; 
+    font-weight: bold;
+    text-align: center;
+}
+
 .about-section, .services-section, .contact-section {
-    font-family: serif;
+    font-family: Georgia, serif;
     background: linear-gradient(to top, #37AFA5, #8BD3CD);     /*#2C3E50*/
     color: #EDC967;
     padding: 20px 20px;
-    margin: 20px 0;      /* about, service, contact boxes moving up and down*/
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+/* about, service, contact boxes moving up and down*/
 }
-.social-icons{
+
+.about-section p {                  /*About para on the right*/
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.services-section p {               /*Service para on the left*/  
+    text-align: left;
+    margin-right: 5px;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-section p {                /*Contact para in the center*/
+    font-family: Georgia, serif;
+    font-size: 1.1em;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.social-icons{                  /*Social media styles*/
     display: flex;
     width: 100px;
     gap: 20px;
@@ -84,34 +264,29 @@ svg{
 svg:hover{
     fill: var(--coloraccent);
 }
-.about-section p, .services-section p, .contact-section p {
-    font-family: serif;
-    font-size: 1.1em;
-    margin: 10px 0;
-    text-align: center;
-}
-footer {
+
+.f-nav {
     color: white;
     text-align: center;
-    padding: 10px;
     margin-top: 20px;
 }
-.a, .b, .c{             /*border box*/
-    border: 2px solid #EDC967; 
-    height: 100%; 
-    box-sizing: border-box; 
-    padding: 1rem; 
-    text-align: center; 
+
+.rv-page, .c-page, .v-page{
+    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+    overflow: hidden; 
+
 }
-.rv-style{              /*review page */
+.rv-style, .c-style, .v-style{              /*review page */
     font-size: 40px; 
     color: #F7EF8A; 
     font-family: 'Snell Roundhand', cursive;
+    
+
 }
-.rv-par{                /*review page */
+.rv-par, .c-par, .v-par{                /*review page */
     font-size: 20px; 
     color: #F7EF8A; 
-    font-family: 'URW Chancery L', cursive;
+    font-family: Georgia, serif;
 }
 .rv-home, .rv-next {
     margin-left: 20px;
@@ -132,6 +307,33 @@ footer {
 
 
 /*
+display: inline-block;
+    vertical-align: top;
+/*
+.container {         Making boxes for about, services, and contact
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.a, .b, .c{             /*border ring around the box
+border: 2px solid #EDC967; 
+height: 100%; 
+box-sizing: border-box; 
+padding: 1rem; 
+text-align: center; 
+}
+
+
+select{                /*Translation box
+float: right;
+padding: 2px;
+background-color: #37AFA5;
+color: #F9F295;
+border-color: #F7EF8A; /*Just this color for now
+}
+
 .showcase{
     position: relative;
     height: 100vh;
