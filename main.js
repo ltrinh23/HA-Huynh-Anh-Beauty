@@ -1,12 +1,12 @@
-
-const translations = {
+/*
+const translations = { //for translator
     vi: {
         rv: "Review" ,
         cust: "Chăm Sóc Khách Hàng",
         nw: "Tin Tức",
         vid: "Videos",
         about : "Về Chúng Tôi",
-        ab : "HA Huỳnh Anh Beauty là nơi cung cấp các dịch vụ chăm sóc sắc đẹp tại Thành phố Hồ Chí Minh. Chúng tôi tự hào với nhân viên chuyên nghiệp và giàu kinh nghiệm, luôn sẵn sàng mang đến cho khách hàng những trải nghiệm tốt nhất. Tại HA Huỳnh Anh Beauty, chúng tôi cam kết sử dụng các sản phẩm an toàn, chất lượng cao, và các phương pháp làm đẹp hiện đại để chăm sóc làn da và vẻ đẹp của bạn.",
+        ab : "HA Huỳnh Anh Beauty là nơi cung cấp các dịch vụ chăm sóc sắc đẹp tại thành phố Hồ Chí Minh. Chúng tôi tự hào với nhân viên chuyên nghiệp và giàu kinh nghiệm, luôn sẵn sàng mang đến cho khách hàng những trải nghiệm tốt nhất. Tại HA Huỳnh Anh Beauty, chúng tôi cam kết sử dụng các sản phẩm an toàn, chất lượng cao, và các phương pháp làm đẹp hiện đại để chăm sóc làn da và vẻ đẹp của bạn.",
         service : "Dịch Vụ",
         ser : "Chúng tôi cung cấp một loạt các dịch vụ chăm sóc sắc đẹp bao gồm chăm sóc da mặt, điều trị mụn, làm sáng da, trẻ hóa da, và các liệu pháp thư giãn. Mỗi dịch vụ của chúng tôi đều được thiết kế để đáp ứng nhu cầu cụ thể của từng khách hàng, giúp bạn cảm thấy thoải mái và tự tin với làn da tươi trẻ và khỏe mạnh.",
         contact : "Liên Hệ",
@@ -32,7 +32,7 @@ const translations = {
         con3: "Email:",
         con4: "We are always ready to listen and provide advice. Contact us for more details about our services and to schedule an appointment.",
         rv_pag: "Review",
-        pag_para:  "BBOur customers consistently appreciate the quality of our services and the professionalism of our staff. Below are some reviews from clients who have experienced services at HA Huỳnh Anh Beauty."
+        pag_para:  "Our customers consistently appreciate the quality of our services and the professionalism of our staff. Below are some reviews from clients who have experienced services at HA Huỳnh Anh Beauty."
     }
 
 }
@@ -96,3 +96,5 @@ const setLanguage = (language) => {
         rv_par.innerText = translations.vi.pag_para;
     }
 }
+
+*/
