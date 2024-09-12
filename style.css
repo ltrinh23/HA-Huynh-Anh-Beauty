@@ -216,9 +216,7 @@ h2 {
     height: 400px;
     border-radius: 8%;
     float: right;
-    margin-left: 50px;         /*Space between text and pics*/
-
-    
+    margin-left: 50px;         /*Space between text and pics*/    
 }
 
 .h_service{                         /*Service Styles*/
@@ -321,7 +319,7 @@ svg:hover{
     fill: var(--coloraccent);
 }
 
-.f-nav {
+.f-nav, .r-foot, .cust-foot, .vid-foot {
     color: white;
     text-align: center;
     margin-top: 20px;
@@ -338,15 +336,71 @@ svg:hover{
     color: #F7EF8A; 
     font-family: 'Snell Roundhand', cursive;
     
-
 }
-.rv-par, .c-par, .v-par{                /*review page */
+.rev{                                  /*customer pic*/
+    max-width: 700px;
+    float: left;
+    height: 700px;
+    border-radius: 8%;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.rv-par{                /*review page */
     font-size: 20px; 
     color: #F7EF8A; 
     font-family: Georgia, serif;
+    height: 100%; 
+    box-sizing: border-box; 
+    height: auto;
+    width: 60%; 
+    float: left;
+    text-align: center; 
+    padding-left: 95px;  
+    font-weight: bold;
 }
+
+.cust{                                  /*customer pic*/
+    max-width: 600px;
+    float: left;
+    height: 500px;
+    border-radius: 8%;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+.c-par{                             /*custmoer*/
+    font-size: 20px; 
+    color: #F7EF8A; 
+    font-family: Georgia, serif;
+    height: 100%; 
+    box-sizing: border-box; 
+    height: auto;
+    width: 60%; 
+    float: right;
+    text-align: center; 
+    padding-right: 80px;
+    font-weight: bold;
+}
+
+.v-par{
+    font-size: 20px; 
+    color: #F7EF8A; 
+    font-family: Georgia, serif;
+    height: 100%; 
+    box-sizing: border-box; 
+    height: auto;
+    width: 60%; 
+    float: left;
+    text-align: center; 
+    padding-left: 195px;  
+    font-weight: bold;
+ 
+}
+
 .rv-home, .rv-next {
-    margin-left: 20px;
+    margin: 20px;
     font-size: 20px; 
 }
 .c-home, .c-next, .c-prev{      /*customer page*/
