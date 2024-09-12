@@ -368,7 +368,7 @@ svg:hover{
     fill: var(--coloraccent);
 }
 
-.f-nav{
+.f-nav, .cust-foot, .r-foot, .vid-foot{
     color: #EDC967;
     text-align: center;
     margin-top: 20px;
