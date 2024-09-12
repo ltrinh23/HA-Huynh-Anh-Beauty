@@ -1,4 +1,4 @@
-.b-home {
+.b-home{
     background: linear-gradient(to top, #37AFA5, #8BD3CD);
     margin: 0;
     padding: 0;
@@ -139,16 +139,15 @@ header img {
 
 .dropdown:hover .dropdown-content {
     display: block;
-        font-family: Georgia, serif;
+    font-family: Georgia, serif;
 
 }
 
-.dropdown:hover .dropbtn {         /* when hover */
+.dropdown:hover .dropbtn {                  /* when hover */
     background-color: #2ea097;
 }
 
-
-nav{       /*about, service, contact boxes, and small logo*/
+#tabs{                              /* nav for about, service, contact boxes, and small logo*/
     background-color: #37AFA5;
     color: #F9F295;
     padding: 10px;
@@ -159,13 +158,19 @@ nav{       /*about, service, contact boxes, and small logo*/
     background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
 }
 
+.top{                                          /*About me, Service, Contact Top bar*/
+    font-family: Snell Roundhand, cursive; /*can change font later*/
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .small-logo{
     padding: 20px;
     width: 5.5rem;
     float: left;
 }
 
-nav a {             /*about-me, service, contact top bar*/
+nav a {                             /*about me, service, contact top bar*/
     color: #F7EF8A; 
     margin: 0 15px;
     text-decoration: none;
@@ -179,11 +184,11 @@ h2 {
 
 }
 
-#about{                 /*picture + h2 + para section*/
+#about{                             /*picture + h2 + para section*/
     margin: auto;
     display: flex;
 }
-.profile{               /*pfp*/
+.profile{                           /*pfp*/
     max-width: 500px;
     float: left;
     height: 500px;
@@ -197,7 +202,7 @@ h2 {
     text-align: center;
 }
 
-#services{                 /*service section*/
+#services{                      /*service section*/
     margin: auto;
     display: flex;
 }
@@ -223,9 +228,10 @@ h2 {
     font-family: Snell Roundhand, cursive; 
     font-weight: bold;
     text-align: center;
+    color: #EDC967;
 }
 
-#contact{                 /*contact section*/
+#contact{                           /*contact section*/
     margin: auto;
 }
 
@@ -261,11 +267,35 @@ h2 {
     padding-right: 100px;
 }
 
-.ser_par{               /*Service para on the left*/  
+.ser_par{                           /*Service para on the left*/  
     text-align: center;
     font-size: 22px;
     font-weight: bold;
     margin: auto;
+    color: #EDC967;
+}
+
+.menu-pic{                          /*Menu for all the services here*/
+    max-width: 600px;
+    float: left;
+    height: 500px;
+    border-radius: 8%;
+    margin-left: 400px;
+    margin-top: 200px;
+}
+
+.ser-text{                          /*Another page for menu*/
+    font-size: 20px; 
+    color: #F7EF8A; 
+    font-family: Georgia, serif;
+    height: 100%; 
+    box-sizing: border-box; 
+    height: auto;
+    width: 60%; 
+    float: right;
+    text-align: center; 
+    padding: 200px;
+    font-weight: bold;
 }
 
 .contact-section p {                /*Contact para in the center*/
@@ -280,7 +310,6 @@ h2 {
     height: 60px;
     width: 60px;
 }
-
 
 #phone{                         /*Zalo box that moves*/
     height: 50px;
@@ -306,7 +335,27 @@ h2 {
     right: 35px;
 }
 
-.social-icons{                  /*Social media styles*/
+#myBtn {                            /*style for back to the top btn*/
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+    color: white;
+    cursor: pointer;
+    padding: 10px;                  /*making the button smaller + bigger*/
+    border-radius: 4px;
+}
+
+#myBtn:hover {                      /*hover back to the top*/           
+    background-color: #2ea097;
+}
+
+.social-icons{                      /*Social media styles*/
     display: flex;
     width: 100px;
     gap: 20px;
@@ -319,34 +368,34 @@ svg:hover{
     fill: var(--coloraccent);
 }
 
-.f-nav, .r-foot, .cust-foot, .vid-foot {
-    color: white;
+.f-nav{
+    color: #EDC967;
     text-align: center;
     margin-top: 20px;
     border-color: #8BD3CD;
 }
 
-.rv-page, .c-page, .v-page{
+.s-menu, .rv-page, .c-page, .v-page{                    /*page styles*/
     background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
     overflow: hidden; 
 
 }
-.rv-style, .c-style, .v-style{              /*review page */
+.menu-style, .rv-style, .c-style, .v-style{            /*service, review, customer, video header*/
     font-size: 40px; 
     color: #F7EF8A; 
     font-family: 'Snell Roundhand', cursive;
-    
 }
-.rev{                                  /*customer pic*/
+
+.rev{                                  /*before and after pic*/
     max-width: 700px;
     float: left;
-    height: 700px;
+    height: 800px;
     border-radius: 8%;
     margin-left: 200px;
     margin-top: 20px;
 }
 
-.rv-par{                /*review page */
+.rv-par{                                /*review page */
     font-size: 20px; 
     color: #F7EF8A; 
     font-family: Georgia, serif;
@@ -356,8 +405,10 @@ svg:hover{
     width: 60%; 
     float: left;
     text-align: center; 
-    padding-left: 95px;  
+    padding: 80px;  
     font-weight: bold;
+    margin-top: 250px;
+
 }
 
 .cust{                                  /*customer pic*/
@@ -367,10 +418,9 @@ svg:hover{
     border-radius: 8%;
     margin-left: 50px;
     margin-top: 20px;
-
 }
 
-.c-par{                             /*custmoer*/
+.c-par{                             /*customer*/
     font-size: 20px; 
     color: #F7EF8A; 
     font-family: Georgia, serif;
@@ -418,6 +468,18 @@ svg:hover{
 
 
 /*
+
+nav{       /*about, service, contact boxes, and small logo
+background-color: #37AFA5;
+color: #F9F295;
+padding: 10px;
+text-align: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+}
+
 
 #foot-bar{
     background-color: #37AFA5;
