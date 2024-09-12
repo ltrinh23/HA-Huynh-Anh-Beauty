@@ -1,4 +1,4 @@
-body {
+.b-home {
     background: linear-gradient(to top, #37AFA5, #8BD3CD);
     margin: 0;
     padding: 0;
@@ -7,6 +7,16 @@ body {
     font-family: 'URW Chancery L', cursive;
     overflow-x: hidden; 
 }
+body {
+    background: #8BD3CD; 
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;                   /*Single or double spaces*/
+    font-family: 'URW Chancery L', cursive;
+    overflow-x: hidden; 
+}
+
 .thumbnail{                /*Logo*/
     width: 700px;
     cursor: pointer;        
@@ -268,13 +278,13 @@ h2 {
     font-weight: bold;
 }
 
-.zalo{
+.zalo{                          /*Zalo QR Code*/
     height: 60px;
     width: 60px;
 }
 
 
-#phone{
+#phone{                         /*Zalo box that moves*/
     height: 50px;
     width: 220px;
     background: linear-gradient(to top, #37AFA5, #8BD3CD);
@@ -283,21 +293,19 @@ h2 {
     font-weight: bold;
     text-align: center;
 
-
     position: sticky;
     top: 20px;
     bottom: 20px;
     left: 50px;
 }
 
-#qr-code{
+#qr-code{                       /*QR Code is the child of #phone*/
     height: 60px;
     width: 60px;
 
     position: relative;
     bottom: 70px;
-    right: 30px;
-
+    right: 35px;
 }
 
 .social-icons{                  /*Social media styles*/
@@ -311,17 +319,6 @@ svg{
 }
 svg:hover{
     fill: var(--coloraccent);
-}
-
-#foot-bar{
-    background-color: #37AFA5;
-    color: #F9F295;
-    padding: 10px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: linear-gradient(to top, #8BD3CD, #37AFA5,);
 }
 
 .f-nav {
@@ -367,6 +364,18 @@ svg:hover{
 
 
 /*
+
+#foot-bar{
+    background-color: #37AFA5;
+    color: #F9F295;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(to top, #8BD3CD, #37AFA5,);
+}
+
 
 .break1{
     display: block;
