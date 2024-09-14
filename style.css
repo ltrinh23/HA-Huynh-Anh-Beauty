@@ -5,7 +5,7 @@ body{
     color: #333;
     line-height: 1.6;                   /*Single or double spaces*/
     font-family: 'URW Chancery L', cursive;
-    width: 1100px;
+
 }
 
 .thumbnail{                /*Logo*/
@@ -179,14 +179,14 @@ h2 {
     margin: auto;
     display: flex;
 }
-
 .profile{                           /*pfp*/
-    max-width: 400px;
+    max-width: 500px;
     float: left;
-    height: 400px;
+    height: 500px;
     border-radius: 8%;
-}
+    margin-left: 200px;
 
+}
 .h_about{                           /*About Styles*/
     font-family: Snell Roundhand, cursive; 
     font-weight: bold;
@@ -199,17 +199,20 @@ h2 {
 }
 
 .s-pic{                     /*Service pic*/
+    position: relative;
     z-index: 2;
-    max-width: 100px;
-    height: 100px;
+    max-width: 400px;
+    height: 400px;
     border-radius: 8%;
     float: right;
 }
 .s-pic2{                        /*Service pic2*/
-    max-width: 100px;
-    height: 100px;
+    position: relative;
+    max-width: 400px;
+    height: 400px;
     border-radius: 8%;
     float: right;
+    margin-left: 50px;         /*Space between text and pics*/    
 }
 
 .h_service{                         /*Service Styles*/
@@ -229,7 +232,7 @@ h2 {
     text-align: center;
 }
 
-.about-section, .service-section, .contact-section {
+.about-section, .services-section, .contact-section {
     font-family: Georgia, serif;
     background: linear-gradient(to top, #37AFA5, #8BD3CD);     /*#2C3E50*/
     color: #EDC967;
@@ -241,10 +244,10 @@ h2 {
     text-align: center;
     margin-left: 5px;
     margin-top: 0;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
-}
 
+}
 .h_about, .about-para{          /* About centering h2 and para*/
     height: 100%; 
     box-sizing: border-box; 
@@ -255,26 +258,16 @@ h2 {
     padding-right: 100px;
 }
 
-.services-section p{                  /*About para on the right*/
+.services-section p{                           /*Service para on the left*/  
     text-align: center;
-    margin-left: 5px;
-    margin-top: 0;
-    font-size: 18px;
-}
-
-.h_service, .serv-par{               /*Service para on the left*/  
-    height: 100px; 
-    color: #EDC967;
+    font-size: 22px;
     font-weight: bold;
-    box-sizing: border-box; 
-    height: auto;
-    width: 600px; 
-    float: left;
-    text-align: center; 
+    margin: auto;
+    color: #EDC967;
 }
 
-.menu-pic{                          /* Menu for all the services here*/
-    max-width: 600px;               /* Change this style later*/
+.menu-pic{                          /*Menu for all the services here*/
+    max-width: 600px;
     float: left;
     height: 500px;
     border-radius: 8%;
@@ -368,9 +361,12 @@ svg:hover{
 
 .f-nav, .cust-foot, .r-foot, .vid-foot{
     color: #EDC967;
+    font-family: Georgia, serif;
     text-align: center;
+    font-weight: bold;
     margin-top: 20px;
     border-color: #8BD3CD;
+
 }
 
 .s-menu, .rv-page, .c-page, .vid-page{                    /*page styles*/
@@ -442,15 +438,20 @@ svg:hover{
     width: 60%; 
     float: left;
     text-align: center; 
-    padding-left: 80px;  
+    padding-left: 195px;  
     font-weight: bold;
+ 
 }
 
 .rv-home, .rv-next {
     margin: 20px;
     font-size: 20px; 
 }
-.c-home, .c-next, .c-prev{              /*customer page*/
+.c-home, .c-next, .c-prev{      /*customer page*/
+    margin-left: 20px;
+    font-size: 20px;
+}
+.n-home, .n-next, .n-prev{      /*news page*/
     margin-left: 20px;
     font-size: 20px;
 }
@@ -459,64 +460,8 @@ svg:hover{
     font-size: 20px;
 }
 
-/* MOBILE VERSION*/
-
-@media only screen and (max-width: 600px) {
-
-    .profile{                           /*pfp*/
-        margin-left: 2%;
-    }
-
-    .h_about, .about-para{          /* About centering h2 and para*/
-        padding-left: 2%;
-    }
-
-    .s-pic, .s-pic2{                     /*Service pic*/
-        margin-left: 100%;
-    }
-
-    .service-section p{               /*Service para on the left*/  
-        margin-bottom: 1%;
-
-    }
-
-@media only screen and (min-width: 601px) {
-
-    .profile{                           /*pfp*/
-        margin-left: 2%;
-    }
-
-    .h_about, .about-para{          /* About centering h2 and para*/
-        padding-left: 100%;
-    }
-
-    .s-pic, .s-pic2{                     /*Service pic*/
-        margin-left: 100%;
-    }
-
-    .service-section p{               /*Service para on the left*/  
-        margin-bottom: 1%;
-    }
-    
-}
-
 
 /*
-
-body {
-    background: #8BD3CD; 
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;                   /*Single or double spaces
-    font-family: 'URW Chancery L', cursive;
-    overflow-x: hidden; 
-}
-
-.n-home, .n-next, .n-prev{      /*news page
-margin-left: 20px;
-font-size: 20px;
-}
 
 nav{       /*about, service, contact boxes, and small logo
 background-color: #37AFA5;
