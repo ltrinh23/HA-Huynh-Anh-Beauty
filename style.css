@@ -5,7 +5,8 @@
     color: #333;
     line-height: 1.6;                   /*Single or double spaces*/
     font-family: 'URW Chancery L', cursive;
-    overflow-x: hidden; 
+    width: 1000px;
+
 }
 body {
     background: #8BD3CD; 
@@ -14,14 +15,14 @@ body {
     color: #333;
     line-height: 1.6;                   /*Single or double spaces*/
     font-family: 'URW Chancery L', cursive;
-    overflow-x: hidden; 
 }
 
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-    .ipad-portrait { color: red; } /* your css rules for ipad portrait */
+.wrapper-main{
+    width: 1000px;
 }
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
-    .ipad-landscape { color: blue; } /* your css rules for ipad landscape */
+
+.container{
+    width: 1000px;
 }
 
 .thumbnail{                /*Logo*/
@@ -68,7 +69,8 @@ img.displaySlide{
     to {opacity: 4;}    
 }
 
-.greetings{                         /*Moving text, will take it out*/
+.greetings{                   /*Moving text, will take it out*/
+    width: 1000px;
     background-color: #8BD3CD;
     font-size: 100px;
     color: #d6ab35;
@@ -82,6 +84,7 @@ header {
     /*padding: 20px 0;*/    /*Review, customer, news, video top bar*/
     box-sizing: border-box;
 }
+
 header img {
     max-width: 80%;
     height: auto;
@@ -90,6 +93,7 @@ header img {
 .menu-container {               /*menu icon*/
     display: inline-block;
     cursor: pointer;
+    
 }
 .bar1, .bar2, .bar3 {           /*menu icon*/
     width: 35px;
@@ -163,6 +167,7 @@ header img {
     top: 0;
     z-index: 1000;
     background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+
 }
 
 .top{                                          /*About me, Service, Contact Top bar*/
@@ -195,14 +200,15 @@ h2 {
     margin: auto;
     display: flex;
 }
-.profile{                           /*pfp*/
-    max-width: 500px;
-    float: left;
-    height: 500px;
-    border-radius: 8%;
-    margin-left: 200px;
 
+.profile{                           /*pfp*/
+    max-width: 400px;
+    float: left;
+    height: 400px;
+    border-radius: 8%;
+    margin-top: 100px;
 }
+
 .h_about{                           /*About Styles*/
     font-family: Snell Roundhand, cursive; 
     font-weight: bold;
@@ -217,18 +223,19 @@ h2 {
 .s-pic{                     /*Service pic*/
     position: relative;
     z-index: 2;
-    max-width: 400px;
-    height: 400px;
+    max-width: 200px;
+    height: 300px;
     border-radius: 8%;
     float: right;
+
 }
 .s-pic2{                        /*Service pic2*/
     position: relative;
-    max-width: 400px;
-    height: 400px;
+    max-width: 200px;
+    height: 300px;
     border-radius: 8%;
     float: right;
-    margin-left: 50px;         /*Space between text and pics*/    
+    margin-left: 30px;         /*Space between text and pics*/    
 }
 
 .h_service{                         /*Service Styles*/
@@ -260,7 +267,7 @@ h2 {
     text-align: center;
     margin-left: 5px;
     margin-top: 0;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: bold;
 
 }
@@ -276,7 +283,7 @@ h2 {
 
 .ser_par{                           /*Service para on the left*/  
     text-align: center;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: bold;
     margin: auto;
     color: #EDC967;
@@ -309,7 +316,7 @@ h2 {
     font-family: Georgia, serif;
     font-size: 1.1em;
     text-align: center;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -379,6 +386,8 @@ svg:hover{
     color: #EDC967;
     text-align: center;
     margin-top: 20px;
+    font-family: Georgia, serif;
+    font-weight: bold;
     border-color: #8BD3CD;
 }
 
@@ -396,26 +405,21 @@ svg:hover{
 .rev{                                  /*before and after pic*/
     max-width: 700px;
     float: left;
-    height: 800px;
+    height: 500px;
     border-radius: 8%;
-    margin-left: 200px;
+    margin-left: 90px;
     margin-top: 20px;
 }
 
-.rv-par{                                /*review page */
+.rv-par{                                /* need t ofix review review page */
     font-size: 20px; 
     color: #F7EF8A; 
     font-family: Georgia, serif;
-    height: 100%; 
-    box-sizing: border-box; 
-    height: auto;
     width: 60%; 
-    float: left;
-    text-align: center; 
+    float: right;
     padding: 80px;  
     font-weight: bold;
-    margin-top: 250px;
-
+    margin-bottom: 500px;
 }
 
 .cust{                                  /*customer pic*/
@@ -471,6 +475,35 @@ svg:hover{
 .v-home, .v-next, .v-prev{      /*video page*/
     margin-left: 20px;
     font-size: 20px;
+}
+
+/* MOBILE VERSION */
+
+@media only screen and (max-width: 600px) {
+
+    .wrapper-main{
+        width: 100%;
+
+    }
+
+    .profile{                           /*pfp*/
+        margin-top: 100px;
+    }
+    
+    .s-pic{                     /*Service pic*/
+        max-width: 400px;
+        height: 400px;
+
+    }
+    .s-pic2{                        /*Service pic2*/
+
+        max-width: 400px;
+        height: 400px;
+        border-radius: 8%;
+        float: right;
+        margin-left: 50px;         /*Space between text and pics*/    
+    }
+
 }
 
 
