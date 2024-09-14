@@ -1,28 +1,11 @@
-.b-home{
+body{
     background: linear-gradient(to top, #37AFA5, #8BD3CD);
     margin: 0;
     padding: 0;
     color: #333;
     line-height: 1.6;                   /*Single or double spaces*/
     font-family: 'URW Chancery L', cursive;
-    width: 1000px;
-
-}
-body {
-    background: #8BD3CD; 
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;                   /*Single or double spaces*/
-    font-family: 'URW Chancery L', cursive;
-}
-
-.wrapper-main{
-    width: 1000px;
-}
-
-.container{
-    width: 1000px;
+    width: 1100px;
 }
 
 .thumbnail{                /*Logo*/
@@ -69,8 +52,7 @@ img.displaySlide{
     to {opacity: 4;}    
 }
 
-.greetings{                   /*Moving text, will take it out*/
-    width: 1000px;
+.greetings{                         /*Moving text, will take it out*/
     background-color: #8BD3CD;
     font-size: 100px;
     color: #d6ab35;
@@ -84,7 +66,6 @@ header {
     /*padding: 20px 0;*/    /*Review, customer, news, video top bar*/
     box-sizing: border-box;
 }
-
 header img {
     max-width: 80%;
     height: auto;
@@ -93,7 +74,6 @@ header img {
 .menu-container {               /*menu icon*/
     display: inline-block;
     cursor: pointer;
-    
 }
 .bar1, .bar2, .bar3 {           /*menu icon*/
     width: 35px;
@@ -167,7 +147,6 @@ header img {
     top: 0;
     z-index: 1000;
     background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
-
 }
 
 .top{                                          /*About me, Service, Contact Top bar*/
@@ -206,7 +185,6 @@ h2 {
     float: left;
     height: 400px;
     border-radius: 8%;
-    margin-top: 100px;
 }
 
 .h_about{                           /*About Styles*/
@@ -221,21 +199,17 @@ h2 {
 }
 
 .s-pic{                     /*Service pic*/
-    position: relative;
     z-index: 2;
-    max-width: 200px;
-    height: 300px;
+    max-width: 100px;
+    height: 100px;
     border-radius: 8%;
     float: right;
-
 }
 .s-pic2{                        /*Service pic2*/
-    position: relative;
-    max-width: 200px;
-    height: 300px;
+    max-width: 100px;
+    height: 100px;
     border-radius: 8%;
     float: right;
-    margin-left: 30px;         /*Space between text and pics*/    
 }
 
 .h_service{                         /*Service Styles*/
@@ -255,7 +229,7 @@ h2 {
     text-align: center;
 }
 
-.about-section, .services-section, .contact-section {
+.about-section, .service-section, .contact-section {
     font-family: Georgia, serif;
     background: linear-gradient(to top, #37AFA5, #8BD3CD);     /*#2C3E50*/
     color: #EDC967;
@@ -267,10 +241,10 @@ h2 {
     text-align: center;
     margin-left: 5px;
     margin-top: 0;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
-
 }
+
 .h_about, .about-para{          /* About centering h2 and para*/
     height: 100%; 
     box-sizing: border-box; 
@@ -281,16 +255,26 @@ h2 {
     padding-right: 100px;
 }
 
-.ser_par{                           /*Service para on the left*/  
+.services-section p{                  /*About para on the right*/
     text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    margin: auto;
-    color: #EDC967;
+    margin-left: 5px;
+    margin-top: 0;
+    font-size: 18px;
 }
 
-.menu-pic{                          /*Menu for all the services here*/
-    max-width: 600px;
+.h_service, .serv-par{               /*Service para on the left*/  
+    height: 100px; 
+    color: #EDC967;
+    font-weight: bold;
+    box-sizing: border-box; 
+    height: auto;
+    width: 600px; 
+    float: left;
+    text-align: center; 
+}
+
+.menu-pic{                          /* Menu for all the services here*/
+    max-width: 600px;               /* Change this style later*/
     float: left;
     height: 500px;
     border-radius: 8%;
@@ -316,7 +300,7 @@ h2 {
     font-family: Georgia, serif;
     font-size: 1.1em;
     text-align: center;
-    font-size: 15px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -386,17 +370,15 @@ svg:hover{
     color: #EDC967;
     text-align: center;
     margin-top: 20px;
-    font-family: Georgia, serif;
-    font-weight: bold;
     border-color: #8BD3CD;
 }
 
-.s-menu, .rv-page, .c-page, .v-page{                    /*page styles*/
+.s-menu, .rv-page, .c-page, .vid-page{                    /*page styles*/
     background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
     overflow: hidden; 
 
 }
-.menu-style, .rv-style, .c-style, .v-style{            /*service, review, customer, video header*/
+.menu-style, .rv-style, .c-style, .vid-style{            /*service, review, customer, video header*/
     font-size: 40px; 
     color: #F7EF8A; 
     font-family: 'Snell Roundhand', cursive;
@@ -405,21 +387,26 @@ svg:hover{
 .rev{                                  /*before and after pic*/
     max-width: 700px;
     float: left;
-    height: 500px;
+    height: 800px;
     border-radius: 8%;
-    margin-left: 90px;
+    margin-left: 200px;
     margin-top: 20px;
 }
 
-.rv-par{                                /* need t ofix review review page */
+.rv-par{                                /*review page */
     font-size: 20px; 
     color: #F7EF8A; 
     font-family: Georgia, serif;
+    height: 100%; 
+    box-sizing: border-box; 
+    height: auto;
     width: 60%; 
-    float: right;
+    float: left;
+    text-align: center; 
     padding: 80px;  
     font-weight: bold;
-    margin-bottom: 500px;
+    margin-top: 250px;
+
 }
 
 .cust{                                  /*customer pic*/
@@ -445,7 +432,7 @@ svg:hover{
     font-weight: bold;
 }
 
-.v-par{
+.vid-par{
     font-size: 20px; 
     color: #F7EF8A; 
     font-family: Georgia, serif;
@@ -455,59 +442,81 @@ svg:hover{
     width: 60%; 
     float: left;
     text-align: center; 
-    padding-left: 195px;  
+    padding-left: 80px;  
     font-weight: bold;
- 
 }
 
 .rv-home, .rv-next {
     margin: 20px;
     font-size: 20px; 
 }
-.c-home, .c-next, .c-prev{      /*customer page*/
+.c-home, .c-next, .c-prev{              /*customer page*/
     margin-left: 20px;
     font-size: 20px;
 }
-.n-home, .n-next, .n-prev{      /*news page*/
-    margin-left: 20px;
-    font-size: 20px;
-}
-.v-home, .v-next, .v-prev{      /*video page*/
+.vid-home, .vid-next, .vid-prev{      /*video page*/
     margin-left: 20px;
     font-size: 20px;
 }
 
-/* MOBILE VERSION */
+/* MOBILE VERSION*/
 
 @media only screen and (max-width: 600px) {
 
-    .wrapper-main{
-        width: 100%;
+    .profile{                           /*pfp*/
+        margin-left: 2%;
+    }
+
+    .h_about, .about-para{          /* About centering h2 and para*/
+        padding-left: 2%;
+    }
+
+    .s-pic, .s-pic2{                     /*Service pic*/
+        margin-left: 100%;
+    }
+
+    .service-section p{               /*Service para on the left*/  
+        margin-bottom: 1%;
 
     }
+
+@media only screen and (min-width: 601px) {
 
     .profile{                           /*pfp*/
-        margin-top: 100px;
+        margin-left: 2%;
+    }
+
+    .h_about, .about-para{          /* About centering h2 and para*/
+        padding-left: 100%;
+    }
+
+    .s-pic, .s-pic2{                     /*Service pic*/
+        margin-left: 100%;
+    }
+
+    .service-section p{               /*Service para on the left*/  
+        margin-bottom: 1%;
     }
     
-    .s-pic{                     /*Service pic*/
-        max-width: 400px;
-        height: 400px;
-
-    }
-    .s-pic2{                        /*Service pic2*/
-
-        max-width: 400px;
-        height: 400px;
-        border-radius: 8%;
-        float: right;
-        margin-left: 50px;         /*Space between text and pics*/    
-    }
-
 }
 
 
 /*
+
+body {
+    background: #8BD3CD; 
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;                   /*Single or double spaces
+    font-family: 'URW Chancery L', cursive;
+    overflow-x: hidden; 
+}
+
+.n-home, .n-next, .n-prev{      /*news page
+margin-left: 20px;
+font-size: 20px;
+}
 
 nav{       /*about, service, contact boxes, and small logo
 background-color: #37AFA5;
