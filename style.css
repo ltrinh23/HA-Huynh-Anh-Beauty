@@ -750,7 +750,7 @@ svg:hover{
     }
 
     .about-section p {                  /*About para on the right*/
-        font-size: 15px;
+        font-size: 13px;
         padding-right: 100px;
         padding-left: 100px;
     }
@@ -770,13 +770,13 @@ svg:hover{
 
     .s-pic{                                 /*Service pic*/
         width: 100px;
-        height: 200px;
+        height: 150px;
         margin-right: 50px;
     }
 
     .s-pic2{                                /*Service pic2*/
         width: 100px;
-        height: 200px;
+        height: 150px;
         margin-top: 45px;
     }
 
