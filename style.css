@@ -575,7 +575,7 @@ svg:hover{
 
 @media (max-width: 425px) {
     body{
-        width: 375%;
+        width: 393%;
     }
     .profile{
         margin-left: 60px;
@@ -608,7 +608,6 @@ svg:hover{
     .s-pic2{                                /*Service pic2*/
         max-width: 300px;
         height: 250px;
-
     }
 
     .h_service {                            /* Services centering h2 and para*/
@@ -654,6 +653,90 @@ svg:hover{
         font-weight: bold;
     }
 }
+
+@media (max-width: 393px) {
+    body{
+        width: 320%;
+        
+    }
+    .profile{
+        margin-left: 30px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .about-section p {                  /*About para on the right*/
+        font-size: 18px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .h_about {        
+        padding-right: 20px;
+        padding-left: 40px;
+        font-size: 45px;
+    }
+    
+    .services-section p{                           /*Service para on the left*/  
+        font-size: 15px;
+        padding-left: 20px;
+        font-weight: bold;
+        margin-left: 100px;
+    }
+
+    .s-pic{                                 /*Service pic*/
+        width: 155px;
+        height: 150px;
+        margin-right: 10px;
+    }
+
+    .s-pic2{                                /*Service pic2*/
+        width: 155px;
+        height: 150px;
+        margin-top: 45px;
+    }
+
+    .h_service {                            /* Services centering h2 and para*/
+        padding-right: 250px;
+        padding-left: 170px;
+        font-size: 45px;
+    }
+
+    .h_con{                             /*Contact Styles*/
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    .contact-section p {                /*Contact para in the center*/
+        font-size: 15px;
+        font-weight: bold;
+    }  
+
+    .rev{       
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+
+    .rv-par{                                /* Review page */
+        padding-left: 100px;  
+    }
+
+    .cust{                                  /* Customer pic*/
+        max-width: 400px;
+        height: 400px;
+        margin-left: 40px;
+        margin-top: 60px;
+    }
+    
+    .c-par{                             /*customer*/
+        font-size: 18px; 
+        padding-right: 50px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+}
+
 
 @media (max-width: 375px) {
     body{
