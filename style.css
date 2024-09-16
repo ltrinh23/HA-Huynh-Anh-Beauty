@@ -184,9 +184,9 @@ h2 {
     display: flex;
 }
 .profile{                           /*pfp*/
-    max-width: 500px;
+    max-width: 100%;
     float: left;
-    height: 500px;
+    height: auto;
     border-radius: 8%;
     margin-left: 150px;
 
