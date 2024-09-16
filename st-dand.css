@@ -1,11 +1,11 @@
 body {
-    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+    background:#37AFA5;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden; /* Stop Website from scrolling side to side */
+    overflow-y: hidden; /* Stop Website from scrolling side to side */
 
 
     width: 1680px;                      /*media for now*/
