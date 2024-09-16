@@ -1,11 +1,18 @@
 body {
     background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     overflow: hidden; /* Stop Website from scrolling side to side */
 
+
+    width: 1680px;                      /*media for now*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0rem;
+    padding-right: 0rem;
 }
 .delayed-appear {
     opacity: 0;
@@ -83,59 +90,54 @@ body.loaded .delayed-appear {
 }
 
 
-/*
-
-
-    width: 1680px;                      /*media for now
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0rem;
-    padding-right: 0rem;
-
-
 @media (max-width: 1680px) {
     body{
         max-width: 1024%;
     }
-    
 }
 
 @media (max-width: 1024px) {
     body{
         max-width: 768%;
     }
-    
+
 }
 
 @media (max-width: 768px) {
     body{
         max-width: 425%;
+        background: linear-gradient(to top, #37AFA5, #8BD3CD);
+
     }
-    
+
 }
 
 @media (max-width: 425px) {
     body{
         max-width: 393%;
     }
-    
+
 }
 
 @media (max-width: 393px) {
     body{
         max-width: 320%;
     }
-    
+
 }
 
 @media (max-width: 320px) {
     body{
         max-width: 320%;
     }
-    
+
 }
 
 
+
+
+
+/*
 
 
 #myImage {
