@@ -106,8 +106,6 @@ body.loaded .delayed-appear {
 @media (max-width: 768px) {
     body{
         max-width: 425%;
-        background: linear-gradient(to top, #37AFA5, #8BD3CD);
-
     }
 
 }
