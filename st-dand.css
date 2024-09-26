@@ -1,18 +1,17 @@
+html, 
+body {
+    width: auto!important; 
+    overflow-x: hidden!important
+} 
+
 body {
     background:#37AFA5;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
-    overflow-y: hidden; /* Stop Website from scrolling side to side */
+ /* Stop Website from scrolling side to side */
 
-
-    width: 1680px;                      /*media for now*/
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0rem;
-    padding-right: 0rem;
 }
 .delayed-appear {
     opacity: 0;
@@ -23,6 +22,9 @@ body {
 /* Show the image after the delay */
 body.loaded .delayed-appear {
     opacity: 1;
+    width: 25rem; 
+    display: block;
+
 }
 .dandelion {
     position: relative;
@@ -90,45 +92,54 @@ body.loaded .delayed-appear {
 }
 
 
-@media (max-width: 1680px) {
-    body{
-        max-width: 1024%;
+/*================ BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+    #myImage {
+        width: 35rem;
+    }
+
+    .seed span{          /*"container"*/
+        width: 12px;
+        height: 12px;
     }
 }
 
-@media (max-width: 1024px) {
-    body{
-        max-width: 768%;
+@media screen and (max-width: 340px){
+    #myImage {
+        width: 35rem;
+    }
+    
+    .seed span{          /*"container"*/
+        width: 15px;
+        height: 15px;
+    }
+} 
+
+
+/* For medium devices */
+@media screen and (min-width: 768px){
+    #myImage {
+        width: 40rem;
     }
 
+    .seed span{          /*"container"*/
+        width: 17px;
+        height: 17px;
+    }
 }
 
-@media (max-width: 768px) {
-    body{
-        max-width: 425%;
+
+/* For large devices */
+@media screen and (min-width: 1120px){
+    #myImage {
+        width: 50rem;
     }
 
-}
-
-@media (max-width: 425px) {
-    body{
-        max-width: 393%;
+    .seed span{          /*"container"*/
+        width: 17px;
+        height: 17px;
     }
-
-}
-
-@media (max-width: 393px) {
-    body{
-        max-width: 320%;
-    }
-
-}
-
-@media (max-width: 320px) {
-    body{
-        max-width: 320%;
-    }
-
 }
 
 
